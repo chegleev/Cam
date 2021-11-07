@@ -17,8 +17,6 @@
             <a href="#!" class="btn-stop" onclick="StopWebCam()">СТОП</a>
         </div>
     </div>
-
-
     <script>
         var StopWebCam = function () {
             var stream = video.srcObject;
@@ -30,7 +28,6 @@
             }
             video.srcObject = null;
         }
-
         var start = function () {
             var video = document.getElementById("video"),
                 vendorURL = window.URL || window.webkitURL;
@@ -47,5 +44,4 @@
         $(function () { start(); });
     </script>
 </body>
-
 </html>
